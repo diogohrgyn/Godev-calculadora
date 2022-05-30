@@ -20,7 +20,7 @@ class Calcular {
   formatDisplayNumber(number) {
     const stringNumber = number.toString();
 
-    const integerDigits = parseFloat(integerDigits.split(".")[0]);
+    const integerDigits = parseFloat(stringNumber.split(".")[0]);
     const decimalDigits = stringNumber.split(".")[1];
 
     let integerDisplay;
@@ -28,13 +28,13 @@ class Calcular {
     if (isNaN(integerDigits)) {
       integerDisplay = "";
     } else {
-      integerDisplay = integerDigits.toLocaleString(en, {
+      integerDisplay = integerDigits.toLocaleString("en", {
         maximumFractionDigits: 0,
       });
     }
 
     if (decimalDigits != null) {
-      return `${integerDisplay}.${integerDigits}`;
+      return `${integerDisplay}.${decimalDigits}`;
     } else {
       return integerDisplay;
     }
