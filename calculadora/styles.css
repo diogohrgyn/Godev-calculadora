@@ -4,7 +4,7 @@
   font-weight: bold;
 }
 body {
-  background: linear-gradient(to right, #3109e0, #6304b6);
+  background: linear-gradient(to right, #dcdbe0, #343435);
 }
 
 .grid-container {
@@ -23,6 +23,8 @@ body {
   outline: none;
   background-color: #111;
   color: #eee;
+  border-radius: 1em;
+  box-shadow: rgb(250, 248, 248) 0.1em 0.1em 0.1em;
 }
 
 .grid-container > button:hover {
@@ -48,6 +50,8 @@ body {
   padding: 10px;
   word-wrap: break-word;
   word-break: break-all;
+  border-radius: 1em;
+  box-shadow: rgb(250, 248, 248) 0.1em 0.1em 0.1em;
 }
 
 .grid-container > .output > .previous-operand {
